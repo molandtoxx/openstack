@@ -39,7 +39,6 @@
     - nova-api
     - nova-scheduler
     - nova-conductor
-    - nova-consoleauth
     - nova-spiceproxy
     - nova-novncproxy
     - nova-cert
@@ -56,7 +55,6 @@
     name:
     - nova-api
     - nova-conductor
-    - nova-consoleauth
     - nova-novncproxy
     - nova-spiceproxy
     - nova-scheduler
@@ -214,7 +212,6 @@
     - nova-api
     - nova-scheduler
     - nova-conductor
-    - nova-consoleauth
     - nova-spiceproxy
     - nova-novncproxy
   when: inventory_hostname in groups['nova_controller']
@@ -233,7 +230,6 @@
     - nova-api
     - nova-scheduler
     - nova-conductor
-    - nova-consoleauth
     - nova-novncproxy
     - nova-spiceproxy
   when: inventory_hostname in groups['nova_controller']
